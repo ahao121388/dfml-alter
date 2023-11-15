@@ -40,11 +40,11 @@ if __name__ == '__main__':
                         default='cub',
                         help='Training dataset, e.g. cub, cars, SOP, Inshop'
                         )
-    parser.add_argument('--embedding-size', default=512, type=int,
+    parser.add_argument('--embedding-size', default=384, type=int,
                         dest='sz_embedding',
                         help='Size of embedding that is appended to backbone model.'
                         )
-    parser.add_argument('--batch-size', default=150, type=int,
+    parser.add_argument('--batch-size', default=20, type=int,
                         dest='sz_batch',
                         help='Number of samples per batch.'
                         )
@@ -55,11 +55,11 @@ if __name__ == '__main__':
     parser.add_argument('--gpu-id', default=0, type=int,
                         help='ID of GPU that is used for training.'
                         )
-    parser.add_argument('--workers', default=0, type=int,
+    parser.add_argument('--workers', default=4, type=int,
                         dest='nb_workers',
                         help='Number of workers for dataloader.'
                         )
-    parser.add_argument('--model', default='bn_inception',
+    parser.add_argument('--model', default='deit_small_distilled_patch16_224',
                         help='Model for training'
                         )
     parser.add_argument('--loss', default='Proxy_Anchor',
@@ -89,10 +89,10 @@ if __name__ == '__main__':
     parser.add_argument('--IPC', type=int,
                         help='Balanced sampling, images per class'
                         )
-    parser.add_argument('--warm', default=1, type=int,
+    parser.add_argument('--warm', default=0, type=int,
                         help='Warmup training epochs'
                         )
-    parser.add_argument('--bn-freeze', default=1, type=int,
+    parser.add_argument('--bn-freeze', default=0, type=int,
                         help='Batch normalization parameter freeze'
                         )
     parser.add_argument('--l2-norm', default=1, type=int,
@@ -109,19 +109,13 @@ if __name__ == '__main__':
         torch.cuda.set_device(args.gpu_id)
 
     # Directory for Log
-    LOG_DIR = args.LOG_DIR + '/logs_{}/{}_{}_embedding{}_alpha{}_mrg{}_{}_lr{}_batch{}{}'.format(args.dataset, args.model,
-                                                                                                 args.loss,
-                                                                                                 args.sz_embedding,
-                                                                                                 args.alpha,
-                                                                                                 args.mrg, args.optimizer,
-                                                                                                 args.lr, args.sz_batch,
-                                                                                                 args.remark)
+    LOG_DIR = args.LOG_DIR + '{}_{}_embedding{}_{}_lr{}_batch{}'.format(args.dataset,args.loss,args.sz_embedding, args.optimizer,args.lr, args.sz_batch)
     # Wandb Initialization
-    wandb.init(project=args.dataset + '_ProxyAnchor', notes=LOG_DIR)
+    wandb.init(project=args.dataset + '-wzh', notes=LOG_DIR)
     # os.environ["WANDB_MODE"] = "offline"
     wandb.config.update(args)
 
-    os.chdir('./data/')
+    os.chdir('../data/')
     data_root = os.getcwd()
     # Dataset Loader and Sampler
     if args.dataset != 'Inshop':
