@@ -1,0 +1,8 @@
+
+Random Sampling
+Traceback (most recent call last):
+  File "C:\Users\30846\Desktop\python\D6900\train.py", line 228, in <module>
+    model = timm.create_model(args.model, pretrained=False, num_classes=0)
+  File "C:\Users\30846\Desktop\python\D6900\timm\models\factory.py", line 67, in create_model
+    raise RuntimeError('Unknown model (%s)' % model_name)
+RuntimeError: Unknown model (deit)

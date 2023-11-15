@@ -1,0 +1,12 @@
+Random Sampling
+Training parameters: {'LOG_DIR': './logs', 'dataset': 'cub', 'sz_embedding': 384, 'sz_batch': 60, 'nb_epochs': 60, 'gpu_id': 0, 'nb_workers': 0, 'model': 'deit_small_distilled_patch16_224', 'loss': 'Proxy_Anchor', 'optimizer': 'adam', 'lr': 0.0001, 'weight_decay': 0.0001, 'lr_decay_step': 5, 'lr_decay_gamma': 0.5, 'alpha': 32, 'mrg': 0.1, 'IPC': None, 'warm': 5, 'bn_freeze': 0, 'l2_norm': 1, 'remark': '', 'readpath': ''}
+Training for 60 epochs.
+0it [00:01, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\30846\Desktop\python\D6900\train.py", line 314, in <module>
+    m1, m2, x_ori_d_attn, x_hard_d_attn, x_ori_d_mlp, x_hard_d_mlp = model(x.squeeze().cuda())
+  File "C:\Program Files\Python37\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\30846\Desktop\python\D6900\timm\models\vision_transformer.py", line 572, in forward
+    x_ori, x_hard, x_ori_d_attn, x_hard_d_attn, x_ori_d_mlp, x_hard_d_mlp, prob_attn, prob_mlp = self.forward_features(x)
+ValueError: not enough values to unpack (expected 8, got 6)

@@ -1,0 +1,27 @@
+2023-11-13 15:38:29,102 INFO    MainThread:4708 [wandb_setup.py:_flush():76] Current SDK version is 0.16.0
+2023-11-13 15:38:29,103 INFO    MainThread:4708 [wandb_setup.py:_flush():76] Configure stats pid to 4708
+2023-11-13 15:38:29,103 INFO    MainThread:4708 [wandb_setup.py:_flush():76] Loading settings from C:\Users\30846\.config\wandb\settings
+2023-11-13 15:38:29,103 INFO    MainThread:4708 [wandb_setup.py:_flush():76] Loading settings from C:\Users\30846\Desktop\python\D6900\wandb\settings
+2023-11-13 15:38:29,103 INFO    MainThread:4708 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-11-13 15:38:29,103 INFO    MainThread:4708 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-11-13 15:38:29,103 INFO    MainThread:4708 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': 'C:\\Users\\30846\\Desktop\\python\\D6900\\train.py', 'program': 'C:\\Users\\30846\\Desktop\\python\\D6900\\train.py'}
+2023-11-13 15:38:29,103 INFO    MainThread:4708 [wandb_init.py:_log_setup():524] Logging user logs to C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_153829-bg8cu5vu\logs\debug.log
+2023-11-13 15:38:29,103 INFO    MainThread:4708 [wandb_init.py:_log_setup():525] Logging internal logs to C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_153829-bg8cu5vu\logs\debug-internal.log
+2023-11-13 15:38:29,104 INFO    MainThread:4708 [wandb_init.py:init():564] calling init triggers
+2023-11-13 15:38:29,104 INFO    MainThread:4708 [wandb_init.py:init():572] wandb.init called with sweep_config: {}
+config: {}
+2023-11-13 15:38:29,104 INFO    MainThread:4708 [wandb_init.py:init():614] starting backend
+2023-11-13 15:38:29,104 INFO    MainThread:4708 [wandb_init.py:init():618] setting up manager
+2023-11-13 15:38:29,106 INFO    MainThread:4708 [backend.py:_multiprocessing_setup():107] multiprocessing start_methods=spawn, using: spawn
+2023-11-13 15:38:29,109 INFO    MainThread:4708 [wandb_init.py:init():624] backend started and connected
+2023-11-13 15:38:29,112 INFO    MainThread:4708 [wandb_init.py:init():716] updated telemetry
+2023-11-13 15:38:29,147 INFO    MainThread:4708 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2023-11-13 15:38:31,062 INFO    MainThread:4708 [wandb_run.py:_on_init():2254] communicating current version
+2023-11-13 15:38:32,015 INFO    MainThread:4708 [wandb_run.py:_on_init():2263] got version response 
+2023-11-13 15:38:32,015 INFO    MainThread:4708 [wandb_init.py:init():800] starting run threads in backend
+2023-11-13 15:38:32,159 INFO    MainThread:4708 [wandb_run.py:_console_start():2233] atexit reg
+2023-11-13 15:38:32,159 INFO    MainThread:4708 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2023-11-13 15:38:32,159 INFO    MainThread:4708 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2023-11-13 15:38:32,159 INFO    MainThread:4708 [wandb_run.py:_redirect():2178] Redirects installed.
+2023-11-13 15:38:32,160 INFO    MainThread:4708 [wandb_init.py:init():841] run started, returning control to user process
+2023-11-13 15:38:32,161 INFO    MainThread:4708 [wandb_run.py:_config_callback():1342] config_cb None None {'LOG_DIR': './logs', 'dataset': 'cub', 'sz_embedding': 384, 'sz_batch': 60, 'nb_epochs': 60, 'gpu_id': 0, 'nb_workers': 0, 'model': 'deit_small_distilled_patch16_224', 'loss': 'Proxy_Anchor', 'optimizer': 'adam', 'lr': 0.0001, 'weight_decay': 0.0001, 'lr_decay_step': 5, 'lr_decay_gamma': 0.5, 'alpha': 32, 'mrg': 0.1, 'IPC': None, 'warm': 5, 'bn_freeze': 0, 'l2_norm': 1, 'remark': '', 'readpath': ''}

@@ -1,0 +1,53 @@
+{
+    "os": "Windows-10-10.0.23585-SP0",
+    "python": "3.10.11",
+    "heartbeatAt": "2023-11-13T05:21:38.140410",
+    "startedAt": "2023-11-13T05:21:38.050413",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\30846\\Desktop\\python\\D6900\\train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/wangck20/DFML.git",
+        "commit": "3edb993a111007296c3719160b906b3b264dec72"
+    },
+    "email": null,
+    "root": "C:/Users/30846/Desktop/python/D6900",
+    "host": "makabaka",
+    "username": "makabaka",
+    "executable": "C:\\Users\\30846\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3801.0,
+        "min": 0.0,
+        "max": 3801.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3801.0,
+            "min": 0.0,
+            "max": 3801.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 465.0229263305664,
+            "used": 398.83121490478516
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 2060 SUPER",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2060 SUPER",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 31.927772521972656
+    }
+}

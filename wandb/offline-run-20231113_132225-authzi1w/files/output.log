@@ -1,0 +1,15 @@
+Train Epoch: 0 [97/97 (99%)] Loss: 20.732944: : 97it [00:53,  1.82it/s]
+100%|██████████| 99/99 [00:40<00:00,  2.43it/s]
+Train Epoch: 1 [95/97 (97%)] Loss: 20.635254: : 95it [00:52,  1.84it/s]
+Random Sampling
+Training parameters: {'LOG_DIR': './logs', 'dataset': 'cub', 'sz_embedding': 384, 'sz_batch': 60, 'nb_epochs': 60, 'gpu_id': 0, 'nb_workers': 0, 'model': 'deit_small_distilled_patch16_224', 'loss': 'Proxy_Anchor', 'optimizer': 'adamw', 'lr': 0.0001, 'weight_decay': 0.0001, 'lr_decay_step': 5, 'lr_decay_gamma': 0.5, 'alpha': 32, 'mrg': 0.1, 'IPC': None, 'warm': 5, 'bn_freeze': 0, 'l2_norm': 1, 'remark': '', 'readpath': ''}
+Training for 60 epochs.
+**Evaluating...**
+F1: 0.017858639621139094
+NMI: 0.21987942599283694
+recall@1: 0.027683997299122215
+recall@2: 0.04827819041188386
+recall@4: 0.08575286968264687
+recall@8: 0.14821066846725187
+MAP@R: 0.002179512076457459
+RP: 0.017860563594548223

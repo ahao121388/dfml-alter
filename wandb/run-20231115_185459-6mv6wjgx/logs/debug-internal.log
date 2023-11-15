@@ -1,0 +1,74 @@
+2023-11-15 18:55:00,002 INFO    StreamThr :3988 [internal.py:wandb_internal():89] W&B internal server running at pid: 3988, started at: 2023-11-15 18:55:00.002061
+2023-11-15 18:55:00,004 DEBUG   HandlerThread:3988 [handler.py:handle_request():146] handle_request: status
+2023-11-15 18:55:00,009 INFO    WriterThread:3988 [datastore.py:open_for_write():85] open: C:\Users\30846\Desktop\python\D6900\wandb\run-20231115_185459-6mv6wjgx\run-6mv6wjgx.wandb
+2023-11-15 18:55:00,010 DEBUG   SenderThread:3988 [sender.py:send():380] send: header
+2023-11-15 18:55:00,193 DEBUG   SenderThread:3988 [sender.py:send():380] send: run
+2023-11-15 18:55:05,225 DEBUG   HandlerThread:3988 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-15 18:55:09,684 INFO    SenderThread:3988 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\urllib3\connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "C:\Program Files\Python37\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Program Files\Python37\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\Program Files\Python37\lib\site-packages\urllib3\connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "C:\Program Files\Python37\lib\site-packages\urllib3\connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x0000022DDB08EE48>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Program Files\Python37\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000022DDB08EE48>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Program Files\Python37\lib\site-packages\wandb\sdk\internal\internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Program Files\Python37\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Program Files\Python37\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Program Files\Python37\lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "C:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 590, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Program Files\Python37\lib\site-packages\requests\adapters.py", line 510, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000022DDB08EE48>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')))
+2023-11-15 18:55:10,252 DEBUG   HandlerThread:3988 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-15 18:55:15,288 DEBUG   HandlerThread:3988 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-15 18:55:20,339 DEBUG   HandlerThread:3988 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-15 18:55:25,378 DEBUG   HandlerThread:3988 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-15 18:55:30,422 DEBUG   HandlerThread:3988 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-15 18:55:35,451 DEBUG   HandlerThread:3988 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-15 18:55:40,488 DEBUG   HandlerThread:3988 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-15 18:55:45,532 DEBUG   HandlerThread:3988 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-15 18:55:50,571 DEBUG   HandlerThread:3988 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-15 18:55:55,613 DEBUG   HandlerThread:3988 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-15 18:56:00,646 DEBUG   HandlerThread:3988 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-15 18:56:05,679 DEBUG   HandlerThread:3988 [handler.py:handle_request():146] handle_request: keepalive

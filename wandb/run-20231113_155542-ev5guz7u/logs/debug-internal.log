@@ -1,0 +1,183 @@
+2023-11-13 15:55:42,094 INFO    StreamThr :3048 [internal.py:wandb_internal():89] W&B internal server running at pid: 3048, started at: 2023-11-13 15:55:42.093134
+2023-11-13 15:55:42,095 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: status
+2023-11-13 15:55:42,097 INFO    WriterThread:3048 [datastore.py:open_for_write():85] open: C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\run-ev5guz7u.wandb
+2023-11-13 15:55:42,098 DEBUG   SenderThread:3048 [sender.py:send():380] send: header
+2023-11-13 15:55:42,239 DEBUG   SenderThread:3048 [sender.py:send():380] send: run
+2023-11-13 15:55:43,184 INFO    SenderThread:3048 [dir_watcher.py:__init__():211] watching files in: C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files
+2023-11-13 15:55:43,185 INFO    SenderThread:3048 [sender.py:_start_run_threads():1127] run started: ev5guz7u with start time 1699862142.094133
+2023-11-13 15:55:43,193 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: check_version
+2023-11-13 15:55:43,193 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: check_version
+2023-11-13 15:55:44,724 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: run_start
+2023-11-13 15:55:44,744 DEBUG   HandlerThread:3048 [system_info.py:__init__():32] System info init
+2023-11-13 15:55:44,744 DEBUG   HandlerThread:3048 [system_info.py:__init__():47] System info init done
+2023-11-13 15:55:44,744 INFO    HandlerThread:3048 [system_monitor.py:start():194] Starting system monitor
+2023-11-13 15:55:44,744 INFO    SystemMonitor:3048 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-13 15:55:44,744 INFO    HandlerThread:3048 [system_monitor.py:probe():214] Collecting system info
+2023-11-13 15:55:44,748 INFO    SystemMonitor:3048 [interfaces.py:start():190] Started cpu monitoring
+2023-11-13 15:55:44,752 INFO    SystemMonitor:3048 [interfaces.py:start():190] Started disk monitoring
+2023-11-13 15:55:44,753 INFO    SystemMonitor:3048 [interfaces.py:start():190] Started gpu monitoring
+2023-11-13 15:55:44,771 INFO    SystemMonitor:3048 [interfaces.py:start():190] Started memory monitoring
+2023-11-13 15:55:44,775 DEBUG   HandlerThread:3048 [system_info.py:probe():196] Probing system
+2023-11-13 15:55:44,783 INFO    SystemMonitor:3048 [interfaces.py:start():190] Started network monitoring
+2023-11-13 15:55:44,784 DEBUG   HandlerThread:3048 [system_info.py:_probe_git():181] Probing git
+2023-11-13 15:55:44,858 DEBUG   HandlerThread:3048 [system_info.py:_probe_git():189] Probing git done
+2023-11-13 15:55:44,858 DEBUG   HandlerThread:3048 [system_info.py:probe():244] Probing system done
+2023-11-13 15:55:44,858 DEBUG   HandlerThread:3048 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.23585-SP0', 'python': '3.7.9', 'heartbeatAt': '2023-11-13T07:55:44.782160', 'startedAt': '2023-11-13T07:55:42.088127', 'docker': None, 'cuda': None, 'args': ('--loss', 'Proxy_Anchor', '--model', 'deit_small_distilled_patch16_224', '--embedding-size', '384', '--batch-size', '60', '--lr', '1e-4', '--dataset', 'cub', '--warm', '5', '--bn-freeze', '0', '--lr-decay-step', '5'), 'state': 'running', 'program': 'C:\\Users\\30846\\Desktop\\python\\D6900\\train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/wangck20/DFML.git', 'commit': '3edb993a111007296c3719160b906b3b264dec72'}, 'email': None, 'root': 'C:/Users/30846/Desktop/python/D6900', 'host': 'makabaka', 'username': 'makabaka', 'executable': 'C:\\Program Files\\Python37\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3801.0, 'min': 0.0, 'max': 3801.0}, 'cpu_freq_per_core': [{'current': 3801.0, 'min': 0.0, 'max': 3801.0}], 'disk': {'/': {'total': 465.0229263305664, 'used': 397.28640365600586}}, 'gpu': 'NVIDIA GeForce RTX 2060 SUPER', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2060 SUPER', 'memory_total': 8589934592}], 'memory': {'total': 31.927772521972656}}
+2023-11-13 15:55:44,858 INFO    HandlerThread:3048 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-13 15:55:44,858 INFO    HandlerThread:3048 [system_monitor.py:probe():227] Publishing system info
+2023-11-13 15:55:44,858 DEBUG   HandlerThread:3048 [system_info.py:_save_pip():53] Saving list of pip packages installed into the current environment
+2023-11-13 15:55:44,859 DEBUG   HandlerThread:3048 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-13 15:55:44,860 INFO    HandlerThread:3048 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-13 15:55:44,868 DEBUG   SenderThread:3048 [sender.py:send():380] send: files
+2023-11-13 15:55:44,868 INFO    SenderThread:3048 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2023-11-13 15:55:44,873 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 15:55:44,873 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 15:55:44,875 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-13 15:55:45,214 INFO    Thread-16 :3048 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files\wandb-metadata.json
+2023-11-13 15:55:45,214 INFO    Thread-16 :3048 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files\requirements.txt
+2023-11-13 15:55:45,618 DEBUG   SenderThread:3048 [sender.py:send():380] send: telemetry
+2023-11-13 15:55:45,618 DEBUG   SenderThread:3048 [sender.py:send():380] send: config
+2023-11-13 15:55:46,214 INFO    Thread-16 :3048 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files\output.log
+2023-11-13 15:55:46,923 DEBUG   SenderThread:3048 [sender.py:send():380] send: exit
+2023-11-13 15:55:46,923 INFO    SenderThread:3048 [sender.py:send_exit():585] handling exit code: 1
+2023-11-13 15:55:46,923 INFO    SenderThread:3048 [sender.py:send_exit():587] handling runtime: 2
+2023-11-13 15:55:46,925 INFO    SenderThread:3048 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-13 15:55:46,925 INFO    SenderThread:3048 [sender.py:send_exit():593] send defer
+2023-11-13 15:55:46,925 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:55:46,925 INFO    HandlerThread:3048 [handler.py:handle_request_defer():172] handle defer: 0
+2023-11-13 15:55:46,925 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:55:46,925 INFO    SenderThread:3048 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-11-13 15:55:46,925 INFO    SenderThread:3048 [sender.py:transition_state():613] send defer: 1
+2023-11-13 15:55:46,926 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:55:46,926 INFO    HandlerThread:3048 [handler.py:handle_request_defer():172] handle defer: 1
+2023-11-13 15:55:46,926 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:55:46,926 INFO    SenderThread:3048 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-11-13 15:55:46,926 INFO    SenderThread:3048 [sender.py:transition_state():613] send defer: 2
+2023-11-13 15:55:46,926 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:55:46,926 INFO    HandlerThread:3048 [handler.py:handle_request_defer():172] handle defer: 2
+2023-11-13 15:55:46,926 INFO    HandlerThread:3048 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-13 15:55:46,926 DEBUG   SystemMonitor:3048 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-13 15:55:46,926 INFO    HandlerThread:3048 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-13 15:55:46,933 DEBUG   SystemMonitor:3048 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-13 15:55:46,933 INFO    HandlerThread:3048 [interfaces.py:finish():202] Joined disk monitor
+2023-11-13 15:55:46,934 DEBUG   SystemMonitor:3048 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-13 15:55:46,975 INFO    HandlerThread:3048 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-13 15:55:46,975 INFO    HandlerThread:3048 [interfaces.py:finish():202] Joined memory monitor
+2023-11-13 15:55:46,975 INFO    HandlerThread:3048 [interfaces.py:finish():202] Joined network monitor
+2023-11-13 15:55:46,975 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:55:46,975 INFO    SenderThread:3048 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-11-13 15:55:46,975 INFO    SenderThread:3048 [sender.py:transition_state():613] send defer: 3
+2023-11-13 15:55:46,976 DEBUG   SenderThread:3048 [sender.py:send():380] send: stats
+2023-11-13 15:55:46,976 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:55:46,976 INFO    HandlerThread:3048 [handler.py:handle_request_defer():172] handle defer: 3
+2023-11-13 15:55:46,976 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:55:46,976 INFO    SenderThread:3048 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-11-13 15:55:46,976 INFO    SenderThread:3048 [sender.py:transition_state():613] send defer: 4
+2023-11-13 15:55:46,976 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:55:46,976 INFO    HandlerThread:3048 [handler.py:handle_request_defer():172] handle defer: 4
+2023-11-13 15:55:46,976 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:55:46,976 INFO    SenderThread:3048 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-11-13 15:55:46,976 INFO    SenderThread:3048 [sender.py:transition_state():613] send defer: 5
+2023-11-13 15:55:46,976 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:55:46,976 INFO    HandlerThread:3048 [handler.py:handle_request_defer():172] handle defer: 5
+2023-11-13 15:55:46,976 DEBUG   SenderThread:3048 [sender.py:send():380] send: summary
+2023-11-13 15:55:46,978 INFO    SenderThread:3048 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-13 15:55:46,978 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:55:46,978 INFO    SenderThread:3048 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-11-13 15:55:46,978 INFO    SenderThread:3048 [sender.py:transition_state():613] send defer: 6
+2023-11-13 15:55:46,978 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:55:46,978 INFO    HandlerThread:3048 [handler.py:handle_request_defer():172] handle defer: 6
+2023-11-13 15:55:46,978 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:55:46,978 INFO    SenderThread:3048 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-11-13 15:55:46,980 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 15:55:47,105 ERROR   wandb-upload_0:3048 [internal_api.py:upload_file():2557] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/3084608158/cub_ProxyAnchor/ev5guz7u/wandb-metadata.json?Expires=1699948548&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=RjE54fLGp2SpFGwIzgC1pq7MfK3XeZB5KiEaElqCVgsrKweujlyUc9GT9Fyv%2BNsJZAkisNolgSD96Fe4%2B%2BFkgwh6iPcociZGdt57RAOFTcpMZSL0eW4GYW%2F%2FY9ZeDxbA69Vm2EwPlcdSPf8%2F2uFqzT8FF1ClM1yPJ7pg7WtkbRrTBBAKdKWv5c%2FN6xCfUpdhkopsv9sLa1Djbk4jo60CDZTa3G%2Fbz6l6Scjm5gqfizQulcxfOvKsjZ2OgLH5ksE6Rk8boD6d7TE2ozI2OPJPfBhbbObUSB5Ob1OO3ATw5udN3Z4msWs068JQ8XlL0IR0HxRCcPu5eRxMzRwvu8JElQ%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/3084608158/cub_ProxyAnchor/ev5guz7u/wandb-metadata.json?Expires=1699948548&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=RjE54fLGp2SpFGwIzgC1pq7MfK3XeZB5KiEaElqCVgsrKweujlyUc9GT9Fyv%2BNsJZAkisNolgSD96Fe4%2B%2BFkgwh6iPcociZGdt57RAOFTcpMZSL0eW4GYW%2F%2FY9ZeDxbA69Vm2EwPlcdSPf8%2F2uFqzT8FF1ClM1yPJ7pg7WtkbRrTBBAKdKWv5c%2FN6xCfUpdhkopsv9sLa1Djbk4jo60CDZTa3G%2Fbz6l6Scjm5gqfizQulcxfOvKsjZ2OgLH5ksE6Rk8boD6d7TE2ozI2OPJPfBhbbObUSB5Ob1OO3ATw5udN3Z4msWs068JQ8XlL0IR0HxRCcPu5eRxMzRwvu8JElQ%3D%3D (Caused by ProxyError('Cannot connect to proxy.', OSError(0, 'Error')))
+2023-11-13 15:55:47,105 ERROR   wandb-upload_0:3048 [internal_api.py:upload_file():2559] upload_file request headers: {'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1794'}
+2023-11-13 15:55:47,105 ERROR   wandb-upload_0:3048 [internal_api.py:upload_file():2561] upload_file response body: 
+2023-11-13 15:55:47,227 INFO    Thread-16 :3048 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files\wandb-summary.json
+2023-11-13 15:55:47,327 INFO    SenderThread:3048 [sender.py:transition_state():613] send defer: 7
+2023-11-13 15:55:47,328 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:55:47,328 INFO    HandlerThread:3048 [handler.py:handle_request_defer():172] handle defer: 7
+2023-11-13 15:55:47,328 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:55:47,328 INFO    SenderThread:3048 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-11-13 15:55:47,903 INFO    SenderThread:3048 [sender.py:transition_state():613] send defer: 8
+2023-11-13 15:55:47,903 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:55:47,903 INFO    HandlerThread:3048 [handler.py:handle_request_defer():172] handle defer: 8
+2023-11-13 15:55:47,903 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:55:47,903 INFO    SenderThread:3048 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-11-13 15:55:47,903 INFO    SenderThread:3048 [job_builder.py:build():298] Attempting to build job artifact
+2023-11-13 15:55:47,904 INFO    SenderThread:3048 [job_builder.py:_get_source_type():428] is repo sourced job
+2023-11-13 15:55:47,934 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-13 15:55:48,189 INFO    SenderThread:3048 [job_builder.py:build():404] adding wandb-job metadata file
+2023-11-13 15:55:48,194 INFO    SenderThread:3048 [sender.py:transition_state():613] send defer: 9
+2023-11-13 15:55:48,194 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: poll_exit
+2023-11-13 15:55:48,194 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:55:48,194 DEBUG   SenderThread:3048 [sender.py:send():380] send: artifact
+2023-11-13 15:55:48,195 INFO    HandlerThread:3048 [handler.py:handle_request_defer():172] handle defer: 9
+2023-11-13 15:55:48,242 INFO    Thread-16 :3048 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files\config.yaml
+2023-11-13 15:55:48,242 INFO    Thread-16 :3048 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files\output.log
+2023-11-13 15:55:48,943 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-13 15:55:49,986 INFO    SenderThread:3048 [sender.py:send_artifact():1458] sent artifact job-https___github.com_wangck20_DFML.git_train.py - {'id': 'QXJ0aWZhY3Q6NjM2MzM1MDA4', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNTE3MTU3NQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjM2MzM1MDA4', 'versionIndex': 0}}}
+2023-11-13 15:55:49,986 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:55:49,986 INFO    SenderThread:3048 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-11-13 15:55:49,986 INFO    SenderThread:3048 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-11-13 15:55:50,026 INFO    wandb-upload_0:3048 [upload_job.py:push():131] Uploaded file C:\Users\30846\AppData\Local\Temp\tmpzx4j9anmwandb\zk56o8w6-wandb-metadata.json
+2023-11-13 15:55:50,267 INFO    SenderThread:3048 [dir_watcher.py:finish():388] scan: C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files
+2023-11-13 15:55:50,268 INFO    SenderThread:3048 [dir_watcher.py:finish():402] scan save: C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files\config.yaml config.yaml
+2023-11-13 15:55:50,268 INFO    SenderThread:3048 [dir_watcher.py:finish():402] scan save: C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files\output.log output.log
+2023-11-13 15:55:50,269 INFO    SenderThread:3048 [dir_watcher.py:finish():402] scan save: C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files\requirements.txt requirements.txt
+2023-11-13 15:55:50,272 INFO    SenderThread:3048 [dir_watcher.py:finish():402] scan save: C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files\wandb-metadata.json wandb-metadata.json
+2023-11-13 15:55:50,272 INFO    SenderThread:3048 [dir_watcher.py:finish():402] scan save: C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files\wandb-summary.json wandb-summary.json
+2023-11-13 15:55:50,274 INFO    SenderThread:3048 [sender.py:transition_state():613] send defer: 10
+2023-11-13 15:55:50,274 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: poll_exit
+2023-11-13 15:55:50,274 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:55:50,275 INFO    HandlerThread:3048 [handler.py:handle_request_defer():172] handle defer: 10
+2023-11-13 15:55:50,276 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:55:50,276 INFO    SenderThread:3048 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-11-13 15:55:50,276 INFO    SenderThread:3048 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-13 15:55:50,951 INFO    wandb-upload_1:3048 [upload_job.py:push():131] Uploaded file C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files\output.log
+2023-11-13 15:55:51,110 INFO    wandb-upload_0:3048 [upload_job.py:push():131] Uploaded file C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files\config.yaml
+2023-11-13 15:55:51,313 INFO    wandb-upload_3:3048 [upload_job.py:push():131] Uploaded file C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files\wandb-summary.json
+2023-11-13 15:55:51,512 INFO    wandb-upload_2:3048 [upload_job.py:push():131] Uploaded file C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\files\requirements.txt
+2023-11-13 15:55:51,716 INFO    Thread-15 :3048 [sender.py:transition_state():613] send defer: 11
+2023-11-13 15:55:51,716 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:55:51,716 INFO    HandlerThread:3048 [handler.py:handle_request_defer():172] handle defer: 11
+2023-11-13 15:55:51,716 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:55:51,716 INFO    SenderThread:3048 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-11-13 15:55:51,717 INFO    SenderThread:3048 [file_pusher.py:join():181] waiting for file pusher
+2023-11-13 15:55:51,717 INFO    SenderThread:3048 [sender.py:transition_state():613] send defer: 12
+2023-11-13 15:55:51,717 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:55:51,717 INFO    HandlerThread:3048 [handler.py:handle_request_defer():172] handle defer: 12
+2023-11-13 15:55:51,717 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:55:51,717 INFO    SenderThread:3048 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-11-13 15:55:51,717 INFO    SenderThread:3048 [file_stream.py:finish():595] file stream finish called
+2023-11-13 15:55:51,991 INFO    SenderThread:3048 [file_stream.py:finish():599] file stream finish is done
+2023-11-13 15:55:51,991 INFO    SenderThread:3048 [sender.py:transition_state():613] send defer: 13
+2023-11-13 15:55:51,991 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:55:51,991 INFO    HandlerThread:3048 [handler.py:handle_request_defer():172] handle defer: 13
+2023-11-13 15:55:51,991 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:55:51,991 INFO    SenderThread:3048 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-11-13 15:55:51,991 INFO    SenderThread:3048 [sender.py:transition_state():613] send defer: 14
+2023-11-13 15:55:51,991 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:55:51,992 DEBUG   SenderThread:3048 [sender.py:send():380] send: final
+2023-11-13 15:55:51,992 INFO    HandlerThread:3048 [handler.py:handle_request_defer():172] handle defer: 14
+2023-11-13 15:55:51,992 DEBUG   SenderThread:3048 [sender.py:send():380] send: footer
+2023-11-13 15:55:51,992 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:55:51,992 INFO    SenderThread:3048 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-11-13 15:55:51,992 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-13 15:55:51,992 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: server_info
+2023-11-13 15:55:51,992 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: get_summary
+2023-11-13 15:55:51,993 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: sampled_history
+2023-11-13 15:55:51,993 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: poll_exit
+2023-11-13 15:55:51,993 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-13 15:55:51,993 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: server_info
+2023-11-13 15:55:51,994 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: job_info
+2023-11-13 15:55:52,246 DEBUG   SenderThread:3048 [sender.py:send_request():407] send_request: job_info
+2023-11-13 15:55:52,246 INFO    MainThread:3048 [wandb_run.py:_footer_history_summary_info():3760] rendering history
+2023-11-13 15:55:52,246 INFO    MainThread:3048 [wandb_run.py:_footer_history_summary_info():3792] rendering summary
+2023-11-13 15:55:52,246 INFO    MainThread:3048 [wandb_run.py:_footer_sync_info():3719] logging synced files
+2023-11-13 15:55:52,246 DEBUG   HandlerThread:3048 [handler.py:handle_request():146] handle_request: shutdown
+2023-11-13 15:55:52,248 INFO    HandlerThread:3048 [handler.py:finish():866] shutting down handler
+2023-11-13 15:55:52,996 INFO    WriterThread:3048 [datastore.py:close():294] close: C:\Users\30846\Desktop\python\D6900\wandb\run-20231113_155542-ev5guz7u\run-ev5guz7u.wandb
+2023-11-13 15:55:53,248 INFO    SenderThread:3048 [sender.py:finish():1536] shutting down sender
+2023-11-13 15:55:53,248 INFO    SenderThread:3048 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-13 15:55:53,248 INFO    SenderThread:3048 [file_pusher.py:join():181] waiting for file pusher
